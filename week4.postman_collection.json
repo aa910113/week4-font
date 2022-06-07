@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "a232e257-4b92-400c-a761-61155aeae2a7",
+		"name": "week4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10622901"
+	},
+	"item": [
+		{
+			"name": "取得使用者",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://shrouded-falls-94426.herokuapp.com/api/users",
+					"protocol": "https",
+					"host": [
+						"shrouded-falls-94426",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增文章",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "正式測試",
+							"type": "text"
+						},
+						{
+							"key": "message",
+							"value": "正式測試",
+							"type": "text"
+						},
+						{
+							"key": "photo",
+							"value": "測試",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/rnp91/Desktop/a7276817f2aab918.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://shrouded-falls-94426.herokuapp.com/api/article",
+					"protocol": "https",
+					"host": [
+						"shrouded-falls-94426",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"article"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得文章",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://shrouded-falls-94426.herokuapp.com/api/article",
+					"protocol": "https",
+					"host": [
+						"shrouded-falls-94426",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"article"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
